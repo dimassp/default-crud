@@ -8,15 +8,17 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className='bg-green-200 p-auto'>
         <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+          <img src={viteLogo} className="logo m-auto !h-[100px] sm:!h-[500px]" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+          <img src={reactLogo} className="logo react m-auto" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <span className='text-3xl font-bold'>
+        Vite + React
+      </span>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
